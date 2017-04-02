@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+    <title>Bootstrap 101 Template</title>
+
+    <!-- Bootstrap -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+	
+	
+	<style>
+	
+	.item
+	{
+	padding: 50px;
+	transition: all .3s;
+	-webkit-transition all .3s;
+	-ms-transform scale(1.25);
+	}
+	.item:hover
+	{
+		transform: scale(1.25);
+		-ms-transform scale(1.25);
+		-webkit-transform scale(1.25);
+		
+		box-shadow:0 0 10px #888;
+		background-color: #fff; 
+	}
+        #front{
+            text-align: center;
+            
+        }
+        #artykul{
+            
+            margin-left: 50px;
+            text-align: left;
+        
+        }
+	</style>	
+  </head>
+  
+   
+  <body>
+  
+ <div class="container">
+	<div class="row">
+		<div class="col-sm-12">
+			  <nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Tutaj wpisujemy nazwę sklepu </a>
+				</div>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right" >
+					<li ><a href="#" data-toggle="modal" data-target="#myModal">Koszyk (<span class="simpleCart_quantity"></span>) </a></li>
+				  </ul>   
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+	</div>	
+  </div>
+  
+  
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+       <h4 class="modal-title" id="myModalLabel">Koszyk </h4>
+      </div>
+      <div class="modal-body">
+ 
+			<div  class="simpleCart_items"> </div>
+			
+		<table class="table table-striped">
+			<thead>
+				<tr>
+					<th> Łącznie </th>
+					<th> Koszt przesyłki</th>
+					<th> Do zapłaty</th>
+				 </tr>
+			</thead>
+			
+			<tbody>
+				<tr>					  
+					<td><div class="simpleCart_total"></div></td>				
+					<td><div class="simpleCart_shipping"></div></td>
+					<td><div class="simpleCart_grandTotal"></div></td>
+				</tr>
+				
+			</tbody>
+		</table>
+
+
+
+ 
+      </div>
+      <div class="modal-footer">
+	  
+	  
+	  <!-- button to empty the cart -->
+<a href="javascript:;" class="simpleCart_empty btn btn-default">Opróżnij kosz</a>
+	  <!-- create a checkout button -->
+<a href="javascript:;" class="simpleCart_checkout btn btn-primary">Złóż zamówienie</a>
+
+
+      </div>
+    </div>
+  </div>
+</div>
+  
+  
+  
+
+
+
+	<div class="container">    <!-- container  -->
+		
+		
+		<div class="row">      <!-- pierwszy wiersz  -->
+			
+			
+			
+            <div id="artykul" >  
+            
+               <h2>Modny facet nie lekceważy kwestii fryzury. Dobre ścięcie i uczesanie czynią mężczyznę atrakcyjniejszym. Warto poświęcić chwilę na ułożenie niesfornych kosmyków. Efekt gwarantowany. Przedstawiamy kosmetyki do stylizacji męskiej czupryny.</h2><br/>
+               
+               <p>Kosmetyki kolagenowe to produkty uwielbiane przez kobiety. Wyróżnia je całkowicie naturalny skład oraz skuteczność działania. Kosmetyki Colway sprawią, że Twoja skóra stanie się młodsza, a Ty zadowolona z jędrnej i gładkiej cery.<br/><br/>
+
+Kosmetyki Colway to sprawdzone preparaty, które cieszą się uznaniem wśród kobiet w każdym wieku. Szeroka gama kosmetyków kolagenowych pozwala zadbać o skórę w sposób kompleksowy, a przede wszystkim profesjonalny. Głównym składem kosmetyków Colway jest kolagen naturalny o konsystencji ułatwiającej aplikację. Ten wyjątkowej jakości kolagen natywny szybko się wchłania, dając uczucie świeżości oraz natychmiastowego ujędrnienia skóry.</p><br/><br/>
+            
+            </div>			
+			
+            <div id="front" >  
+            
+                <img src="img/triple_helix.jpg"/>
+            
+            </div>
+					
+
+  
+					
+
+
+		
+		
+		
+		
+		
+		
+		
+		
+		<div class="row">      <!-- pierwszy wiersz  -->
+			
+			
+			
+			
+            <div class="col-sm-3 item text-center">  
+            <div class="col-sm-12">
+			  <nav class="navbar navbar-default">
+			  <div class="container-fluid">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+				  <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+					<span class="sr-only">Toggle navigation</span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				  </button>
+				  <a class="navbar-brand" href="#">Tutaj wpisujemy nazwę sklepu </a>
+				</div>
+				
+				<br/><br/><br/><br/><br/><br/><br/>
+
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+				  <ul class="nav navbar-nav navbar-right" >
+					<li ><a href="#" data-toggle="modal" data-target="#myModal">Koszyk (<span class="simpleCart_quantity"></span>) </a></li>
+				  </ul>   
+				</div><!-- /.navbar-collapse -->
+			  </div><!-- /.container-fluid -->
+			</nav>
+		</div>
+					
+            </div>	     
+                
+                
+                
+            <div class="col-sm-2 item text-center">  
+					<div class="simpleCart_shelfItem" >   
+					<h5 class="item_name" > Szampon odżywczy </h5>
+						<div class="row">     
+							<div class="col-xl-12 ">
+								<img src="img/szampon_wzmacniajacy.png"  width="141" height="241">
+							</div>
+						</div>
+								<div class="row">     
+									<div class="col-sm-12 ">	
+										<h5 class="item_price">35.99 zł</h5>
+									</div>
+								</div>	
+										<div class="row">
+																				
+											<div class="col-xs-7">
+												<input type="text"  class="item_Quantity form-control"placeholder="ilość"><br>
+											</div>
+											
+											<div class="col-xs-5 ">												
+												<a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+											</div>
+										</div>
+					</div>	
+			</div>  
+		
+			<div class="col-sm-2 item text-center">  
+					<div class="simpleCart_shelfItem" >   
+					<h5 class="item_name" > Szampon odżywczy </h5>
+						<div class="row">     
+							<div class="col-x-12 ">
+								<img src="img/szampon_wzmacniajacy.png"  width="141" height="241">
+							</div>
+						</div>
+								<div class="row">     
+									<div class="col-x-12 ">	
+										<h5 class="item_price">35.99 zł</h5>
+									</div>
+								</div>	
+										<div class="row">
+																				
+											<div class="col-sm-7">
+												<input type="text"  class="item_Quantity form-control"placeholder="ilość"><br>
+											</div>
+											
+											<div class="col-xs-5 ">												
+												<a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+											</div>
+										</div>
+					</div>	
+			</div>  
+		
+			<div class="col-sm-2 item text-center">  
+					<div class="simpleCart_shelfItem" >   
+					<h5 class="item_name" > Szampon odżywczy </h5>
+						<div class="row">     
+							<div class="col-x-12 ">
+								<img src="img/szampon_wzmacniajacy.png"  width="141" height="241">
+							</div>
+						</div>
+								<div class="row">     
+									<div class="col-x-12 ">	
+										<h5 class="item_price">35.99 zł</h5>
+									</div>
+								</div>	
+										<div class="row">
+																				
+											<div class="col-sm-7">
+												<input type="text"  class="item_Quantity form-control"placeholder="ilość"><br>
+											</div>
+											
+											<div class="col-xs-5 ">												
+												<a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+											</div>
+										</div>
+					</div>	
+			</div>  
+			
+			 <div class="col-sm-3 item text-center">  
+					
+            </div>
+
+			
+		</div>                 <!-- /pierwszy wiersz  -->
+		
+		
+		   
+	<!-- /	<div class="row">     
+		
+                    
+                    
+            <div class="col-sm-3 item text-center">  
+					
+            </div>
+            
+            
+						<div class="col-sm-2 item text-center">  
+					<div class="simpleCart_shelfItem" >   
+					<h5 class="item_name" > Szampon odżywczy </h5>
+						<div class="row">     
+							<div class="col-x-12 ">
+								<img src="img/szampon_wzmacniajacy.png"  width="141" height="241">
+							</div>
+						</div>
+								<div class="row">     
+									<div class="col-x-12 ">	
+										<h5 class="item_price">35.99 zł</h5>
+									</div>
+								</div>	
+										<div class="row">
+																				
+											<div class="col-sm-7">
+												<input type="text"  class="item_Quantity form-control"placeholder="ilość"><br>
+											</div>
+											
+											<div class="col-xs-5 ">												
+												<a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+											</div>
+										</div>
+					</div>	
+			</div>  
+			
+			<div class="col-sm-2 item text-center">  
+					<div class="simpleCart_shelfItem" >   
+					<h5 class="item_name" > Szampon odżywczy </h5>
+						<div class="row">     
+							<div class="col-x-12 ">
+								<img src="img/szampon_wzmacniajacy.png"  width="141" height="241">
+							</div>
+						</div>
+								<div class="row">     
+									<div class="col-x-12 ">	
+										<h5 class="item_price">35.99 zł</h5>
+									</div>
+								</div>	
+										<div class="row">
+																				
+											<div class="col-sm-7">
+												<input type="text"  class="item_Quantity form-control"placeholder="ilość"><br>
+											</div>
+											
+											<div class="col-xs-5 ">												
+												<a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+											</div>
+										</div>
+					</div>	
+			</div>  
+			
+			<div class="col-sm-2 item text-center">  
+					<div class="simpleCart_shelfItem" >   
+					<h5 class="item_name" > Szampon odżywczy </h5>
+						<div class="row">     
+							<div class="col-x-12 ">
+								<img src="img/szampon_wzmacniajacy.png"  width="141" height="241">
+							</div>
+						</div>
+								<div class="row">     
+									<div class="col-x-12 ">	
+										<h5 class="item_price">35.99 zł</h5>
+									</div>
+								</div>	
+										<div class="row">
+																				
+											<div class="col-sm-7">
+												<input type="text"  class="item_Quantity form-control"placeholder="ilość"><br>
+											</div>
+											
+											<div class="col-xs-5 ">												
+												<a class="item_add btn btn-primary" href="javascript:;"> Dodaj </a>
+											</div>
+										</div>
+					</div>	
+			</div> 
+			
+            <div class="col-sm-3 item text-center">  
+					
+            </div> 
+		
+		</div>      -->            <!-- /drugi wiersz   -->
+		
+		
+		
+	
+	</div>                     <!-- /container  -->
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+	 <script src="js/simpleCart.js"></script>
+	 <script src="simpleCart.js"></script>
+		<script>
+		  simpleCart({
+	// array representing the format and columns of the cart,
+	// see the cart columns documentation
+	cartColumns: [
+		{ attr: "name", label: "Produkt"},
+		{ view: "currency", attr: "price", label: "Cena"},
+		{ view: "decrement", label: false},
+		{ attr: "quantity", label: "Ilość"},
+		{ view: "increment", label: false},
+		{ view: "currency", attr: "total", label: "Razem" },
+		{ view: "remove", text: "Usuń", label: false}
+	],
+
+	// "div" or "table" - builds the cart as a 
+	// table or collection of divs
+	cartStyle: "table", 
+
+	// how simpleCart should checkout, see the 
+	// checkout reference for more info 
+	checkout: { 
+		type: "PayPal" , 
+		email: "you@yours.com" 
+	},
+
+	// set the currency, see the currency 
+	// reference for more info
+	currency: "PLN",
+
+	// collection of arbitrary data you may want to store 
+	// with the cart, such as customer info
+	data: {},
+
+	// set the cart langauge 
+	// (may be used for checkout)
+	language: "english-us",
+
+	// array of item fields that will not be 
+	// sent to checkout
+	excludeFromCheckout: [],
+
+	// custom function to add shipping cost
+	shippingCustom: null,
+
+	// flat rate shipping option
+	shippingFlatRate: 0,
+
+	// added shipping based on this value 
+	// multiplied by the cart quantity
+	shippingQuantityRate: 0,
+
+	// added shipping based on this value 
+	// multiplied by the cart subtotal
+	shippingTotalRate: 0,
+
+	// tax rate applied to cart subtotal
+	taxRate: 0,
+
+	// true if tax should be applied to shipping
+	taxShipping: false,
+
+	// event callbacks 
+	beforeAdd			: null,
+	afterAdd			: null,
+	load				: null,
+	beforeSave		: null,
+	afterSave			: null,
+	update			: null,
+	ready			: null,
+	checkoutSuccess	: null,
+	checkoutFail		: null,
+	beforeCheckout		: null,
+        beforeRemove           : null
+});
+
+		</script>
+	 
+ 
+ 
+ </body>
+</html>
